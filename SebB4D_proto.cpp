@@ -37,10 +37,10 @@ int SebasShift=false;
 
 #define COS_1_DEG   (float)0.99984769515639123915701155881391
 #define SIN_1_DEG   (float)0.017452406437283512819418978516316
-//#define COS_2_DEG   (float)0.99939082701909573000624344004393
-//#define SIN_2_DEG   (float)0.034899496702500971645995181625333
-#define COS_2_DEG   (float)0.70710678118654752440084436210485
-#define SIN_2_DEG   (float)0.70710678118654752440084436210485
+#define COS_2_DEG   (float)0.99939082701909573000624344004393
+#define SIN_2_DEG   (float)0.034899496702500971645995181625333
+//#define COS_2_DEG   (float)0.70710678118654752440084436210485
+//#define SIN_2_DEG   (float)0.70710678118654752440084436210485
 #define COS_5_DEG   (float)0.99619469809174553229501040247389
 #define SIN_5_DEG   (float)0.087155742747658173558064270837474
 const float c4DRotateXZ_2Deg[5][5]=
@@ -493,7 +493,7 @@ public:
 		{
 			trPr[i].createTriangle3d(GLfloat(.05*sin(variableT)));
 		}
-		variableT=variableT+(float)0.5;
+		variableT=variableT+(float)0.1;
 //		if(variableT>2.1){variableT=-2.1;}
 	}
 };
@@ -1200,22 +1200,22 @@ int WINAPI WinMain(	HINSTANCE	hInstance,			// Instance
       if (keys['S'])
 			{
                // DeltaY=DeltaY+0.1;
-				g4DTransformMatrix[1][4]+=0.1;
+				g4DTransformMatrix[1][4]+=0.01;
 			}
 			if (keys['X'])
 			{
                // DeltaY=DeltaY-0.1;
-				g4DTransformMatrix[1][4]-=0.1;
+				g4DTransformMatrix[1][4]-=0.01;
 			}
 			if (keys['Z'])
 			{
                // DeltaX=DeltaX-0.1;
-				g4DTransformMatrix[0][4]-=0.1;
+				g4DTransformMatrix[0][4]-=0.01;
 			}
 			if (keys['C'])
 			{
                // DeltaX=DeltaX+0.1;
-				g4DTransformMatrix[0][4]+=0.1;
+				g4DTransformMatrix[0][4]+=0.01;
 			}
 			if (keys['A'])
 			{
@@ -1235,22 +1235,22 @@ int WINAPI WinMain(	HINSTANCE	hInstance,			// Instance
 			if (keys['G'])
 			{
                // DeltaZ=DeltaZ-0.1;
-				g4DTransformMatrix[2][4]-=0.1;
+				g4DTransformMatrix[2][4]-=0.01;
 			}
 			if (keys['B'])
 			{
                // DeltaZ=DeltaZ+0.1;
-				g4DTransformMatrix[2][4]+=0.1;
+				g4DTransformMatrix[2][4]+=0.01;
 			}
 			if (keys['V'])
 			{
                // DeltaX=DeltaX-0.1;
-				g4DTransformMatrix[0][4]-=0.1;
+				g4DTransformMatrix[0][4]-=0.01;
 			}
 			if (keys['N'])
 			{
                // DeltaX=DeltaX+0.1;
-				g4DTransformMatrix[0][4]+=0.1;
+				g4DTransformMatrix[0][4]+=0.01;
 			}
 			if (keys['F'])
 			{
@@ -1283,22 +1283,22 @@ int WINAPI WinMain(	HINSTANCE	hInstance,			// Instance
 			if (keys['2'])
 			{
                // DeltaT=DeltaT-0.1;
-				g4DTransformMatrix[3][4]-=0.1;
+				g4DTransformMatrix[3][4]-=0.01;
 			}
 			if (keys['W'])
 			{
                // DeltaT=DeltaT+0.1;
-				g4DTransformMatrix[3][4]+=0.1;
+				g4DTransformMatrix[3][4]+=0.01;
 			}
 			if (keys['Q'])
 			{
                // DeltaX=DeltaX-0.1;
-				g4DTransformMatrix[0][4]-=0.1;
+				g4DTransformMatrix[0][4]-=0.01;
 			}
 			if (keys['E'])
 			{
                // DeltaX=DeltaX+0.1;
-				g4DTransformMatrix[0][4]+=0.1;
+				g4DTransformMatrix[0][4]+=0.01;
 			}
 			if (keys['1'])
 			{
